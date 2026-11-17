@@ -1,0 +1,2 @@
+# Compatibilidade com a orientação de instalação da versão recebida.
+-r requirements.txt

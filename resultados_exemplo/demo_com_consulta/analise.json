@@ -1,0 +1,709 @@
+[
+  {
+    "titulo": "Sales dashboard chart",
+    "id": "texto-1",
+    "idioma": "en",
+    "texto_limpo": "Sales dashboard chart. Our sales analytics report should work as a dashboard chart.",
+    "url": "",
+    "origem": "exemplo redigido para demonstracao",
+    "categorias": [
+      "painel",
+      "vendas"
+    ],
+    "evidencias": {
+      "vendas": [
+        "Sales",
+        "sales"
+      ],
+      "painel": [
+        "dashboard",
+        "sales analytics report"
+      ]
+    },
+    "numeros_re": {
+      "valores": [],
+      "unidades": []
+    },
+    "tokens": 15,
+    "pipeline_spacy": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "sentencas": [
+      "Sales dashboard chart.",
+      "Our sales analytics report should work as a dashboard chart."
+    ],
+    "trechos_requisitos": [
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Sales dashboard chart."
+      },
+      {
+        "categoria": "painel",
+        "expressao": "dashboard",
+        "sentenca": "Sales dashboard chart."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "sales",
+        "sentenca": "Our sales analytics report should work as a dashboard chart."
+      },
+      {
+        "categoria": "painel",
+        "expressao": "sales analytics report",
+        "sentenca": "Our sales analytics report should work as a dashboard chart."
+      },
+      {
+        "categoria": "painel",
+        "expressao": "dashboard",
+        "sentenca": "Our sales analytics report should work as a dashboard chart."
+      }
+    ],
+    "analise_semantica": {
+      "sentimento": {
+        "rotulo": "positivo",
+        "confianca": 0.5417719483375549,
+        "probabilidades": {
+          "positivo": 0.5417719483375549,
+          "neutro": 0.1980467438697815,
+          "negativo": 0.2601812481880188
+        },
+        "modelo": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+        "revisao": "cf991100d706c13c0a080c097134c05b7f436c45",
+        "agregacao": "média das probabilidades ponderada por tokens do embedding"
+      },
+      "embedding": {
+        "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "dimensoes": 384,
+        "agregacao": "média ponderada dos vetores normalizados e nova normalização L2"
+      },
+      "limites_tokens": {
+        "embeddings": 128,
+        "sentimentos": 512
+      },
+      "fragmentos": [
+        {
+          "texto": "Sales dashboard chart. Our sales analytics report should work as a dashboard chart.",
+          "tokens_embeddings": 19,
+          "tokens_sentimentos": 23,
+          "peso": 17,
+          "probabilidades": {
+            "positivo": 0.5417719483375549,
+            "negativo": 0.2601812481880188,
+            "neutro": 0.1980467438697815
+          }
+        }
+      ],
+      "textos_similares": [
+        {
+          "indice": 3,
+          "id": "texto-4",
+          "titulo": "Permissions for sales",
+          "url": "",
+          "similaridade": 0.5388733924439583
+        },
+        {
+          "indice": 1,
+          "id": "texto-2",
+          "titulo": "Sales by brand",
+          "url": "",
+          "similaridade": 0.4788567222860592
+        },
+        {
+          "indice": 2,
+          "id": "texto-3",
+          "titulo": "Customer name in report",
+          "url": "",
+          "similaridade": 0.4200936974254463
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Sales by brand",
+    "id": "texto-2",
+    "idioma": "en",
+    "texto_limpo": "Sales by brand. A sales report needs a filter for the product brand.",
+    "url": "",
+    "origem": "exemplo redigido para demonstracao",
+    "categorias": [
+      "filtro",
+      "painel",
+      "vendas"
+    ],
+    "evidencias": {
+      "vendas": [
+        "Sales",
+        "sales"
+      ],
+      "painel": [
+        "sales report"
+      ],
+      "filtro": [
+        "filter"
+      ]
+    },
+    "numeros_re": {
+      "valores": [],
+      "unidades": []
+    },
+    "tokens": 15,
+    "pipeline_spacy": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "sentencas": [
+      "Sales by brand.",
+      "A sales report needs a filter for the product brand."
+    ],
+    "trechos_requisitos": [
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Sales by brand."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "sales",
+        "sentenca": "A sales report needs a filter for the product brand."
+      },
+      {
+        "categoria": "painel",
+        "expressao": "sales report",
+        "sentenca": "A sales report needs a filter for the product brand."
+      },
+      {
+        "categoria": "filtro",
+        "expressao": "filter",
+        "sentenca": "A sales report needs a filter for the product brand."
+      }
+    ],
+    "analise_semantica": {
+      "sentimento": {
+        "rotulo": "positivo",
+        "confianca": 0.5543103218078613,
+        "probabilidades": {
+          "positivo": 0.5543103218078613,
+          "neutro": 0.24694204330444336,
+          "negativo": 0.1987476348876953
+        },
+        "modelo": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+        "revisao": "cf991100d706c13c0a080c097134c05b7f436c45",
+        "agregacao": "média das probabilidades ponderada por tokens do embedding"
+      },
+      "embedding": {
+        "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "dimensoes": 384,
+        "agregacao": "média ponderada dos vetores normalizados e nova normalização L2"
+      },
+      "limites_tokens": {
+        "embeddings": 128,
+        "sentimentos": 512
+      },
+      "fragmentos": [
+        {
+          "texto": "Sales by brand. A sales report needs a filter for the product brand.",
+          "tokens_embeddings": 17,
+          "tokens_sentimentos": 17,
+          "peso": 15,
+          "probabilidades": {
+            "positivo": 0.5543103218078613,
+            "neutro": 0.24694204330444336,
+            "negativo": 0.1987476348876953
+          }
+        }
+      ],
+      "textos_similares": [
+        {
+          "indice": 2,
+          "id": "texto-3",
+          "titulo": "Customer name in report",
+          "url": "",
+          "similaridade": 0.6071284402253354
+        },
+        {
+          "indice": 3,
+          "id": "texto-4",
+          "titulo": "Permissions for sales",
+          "url": "",
+          "similaridade": 0.4888258353848721
+        },
+        {
+          "indice": 0,
+          "id": "texto-1",
+          "titulo": "Sales dashboard chart",
+          "url": "",
+          "similaridade": 0.4788567222860592
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Customer name in report",
+    "id": "texto-3",
+    "idioma": "en",
+    "texto_limpo": "Customer name in report. The sales report should display the customer name, not only a code.",
+    "url": "",
+    "origem": "exemplo redigido para demonstracao",
+    "categorias": [
+      "cliente",
+      "painel",
+      "vendas"
+    ],
+    "evidencias": {
+      "cliente": [
+        "Customer name",
+        "customer name"
+      ],
+      "vendas": [
+        "sales"
+      ],
+      "painel": [
+        "sales report"
+      ]
+    },
+    "numeros_re": {
+      "valores": [],
+      "unidades": []
+    },
+    "tokens": 19,
+    "pipeline_spacy": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "sentencas": [
+      "Customer name in report.",
+      "The sales report should display the customer name, not only a code."
+    ],
+    "trechos_requisitos": [
+      {
+        "categoria": "cliente",
+        "expressao": "Customer name",
+        "sentenca": "Customer name in report."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "sales",
+        "sentenca": "The sales report should display the customer name, not only a code."
+      },
+      {
+        "categoria": "painel",
+        "expressao": "sales report",
+        "sentenca": "The sales report should display the customer name, not only a code."
+      },
+      {
+        "categoria": "cliente",
+        "expressao": "customer name",
+        "sentenca": "The sales report should display the customer name, not only a code."
+      }
+    ],
+    "analise_semantica": {
+      "sentimento": {
+        "rotulo": "positivo",
+        "confianca": 0.38558974862098694,
+        "probabilidades": {
+          "positivo": 0.38558974862098694,
+          "neutro": 0.3544933497905731,
+          "negativo": 0.25991690158843994
+        },
+        "modelo": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+        "revisao": "cf991100d706c13c0a080c097134c05b7f436c45",
+        "agregacao": "média das probabilidades ponderada por tokens do embedding"
+      },
+      "embedding": {
+        "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "dimensoes": 384,
+        "agregacao": "média ponderada dos vetores normalizados e nova normalização L2"
+      },
+      "limites_tokens": {
+        "embeddings": 128,
+        "sentimentos": 512
+      },
+      "fragmentos": [
+        {
+          "texto": "Customer name in report. The sales report should display the customer name, not only a code.",
+          "tokens_embeddings": 21,
+          "tokens_sentimentos": 22,
+          "peso": 19,
+          "probabilidades": {
+            "positivo": 0.38558974862098694,
+            "neutro": 0.3544933497905731,
+            "negativo": 0.25991690158843994
+          }
+        }
+      ],
+      "textos_similares": [
+        {
+          "indice": 1,
+          "id": "texto-2",
+          "titulo": "Sales by brand",
+          "url": "",
+          "similaridade": 0.6071284402253354
+        },
+        {
+          "indice": 0,
+          "id": "texto-1",
+          "titulo": "Sales dashboard chart",
+          "url": "",
+          "similaridade": 0.4200936974254463
+        },
+        {
+          "indice": 3,
+          "id": "texto-4",
+          "titulo": "Permissions for sales",
+          "url": "",
+          "similaridade": 0.3985256127621854
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Permissions for sales",
+    "id": "texto-4",
+    "idioma": "en",
+    "texto_limpo": "Permissions for sales. The dashboard should respect role permissions when displaying sales.",
+    "url": "",
+    "origem": "exemplo redigido para demonstracao",
+    "categorias": [
+      "acesso",
+      "painel",
+      "vendas"
+    ],
+    "evidencias": {
+      "acesso": [
+        "Permissions",
+        "permissions"
+      ],
+      "vendas": [
+        "sales"
+      ],
+      "painel": [
+        "dashboard"
+      ]
+    },
+    "numeros_re": {
+      "valores": [],
+      "unidades": []
+    },
+    "tokens": 14,
+    "pipeline_spacy": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "sentencas": [
+      "Permissions for sales.",
+      "The dashboard should respect role permissions when displaying sales."
+    ],
+    "trechos_requisitos": [
+      {
+        "categoria": "acesso",
+        "expressao": "Permissions",
+        "sentenca": "Permissions for sales."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "sales",
+        "sentenca": "Permissions for sales."
+      },
+      {
+        "categoria": "painel",
+        "expressao": "dashboard",
+        "sentenca": "The dashboard should respect role permissions when displaying sales."
+      },
+      {
+        "categoria": "acesso",
+        "expressao": "permissions",
+        "sentenca": "The dashboard should respect role permissions when displaying sales."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "sales",
+        "sentenca": "The dashboard should respect role permissions when displaying sales."
+      }
+    ],
+    "analise_semantica": {
+      "sentimento": {
+        "rotulo": "positivo",
+        "confianca": 0.4472021460533142,
+        "probabilidades": {
+          "positivo": 0.4472021460533142,
+          "neutro": 0.23979122936725616,
+          "negativo": 0.3130066394805908
+        },
+        "modelo": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+        "revisao": "cf991100d706c13c0a080c097134c05b7f436c45",
+        "agregacao": "média das probabilidades ponderada por tokens do embedding"
+      },
+      "embedding": {
+        "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "dimensoes": 384,
+        "agregacao": "média ponderada dos vetores normalizados e nova normalização L2"
+      },
+      "limites_tokens": {
+        "embeddings": 128,
+        "sentimentos": 512
+      },
+      "fragmentos": [
+        {
+          "texto": "Permissions for sales. The dashboard should respect role permissions when displaying sales.",
+          "tokens_embeddings": 19,
+          "tokens_sentimentos": 22,
+          "peso": 17,
+          "probabilidades": {
+            "positivo": 0.4472021460533142,
+            "negativo": 0.3130066394805908,
+            "neutro": 0.23979122936725616
+          }
+        }
+      ],
+      "textos_similares": [
+        {
+          "indice": 0,
+          "id": "texto-1",
+          "titulo": "Sales dashboard chart",
+          "url": "",
+          "similaridade": 0.5388733924439583
+        },
+        {
+          "indice": 1,
+          "id": "texto-2",
+          "titulo": "Sales by brand",
+          "url": "",
+          "similaridade": 0.4888258353848721
+        },
+        {
+          "indice": 2,
+          "id": "texto-3",
+          "titulo": "Customer name in report",
+          "url": "",
+          "similaridade": 0.3985256127621854
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Price reduction",
+    "id": "texto-5",
+    "idioma": "en",
+    "texto_limpo": "Price reduction. The software needs to record a price reduction with zero quantity.",
+    "url": "",
+    "origem": "exemplo redigido para demonstracao",
+    "categorias": [
+      "preco"
+    ],
+    "evidencias": {
+      "preco": [
+        "Price",
+        "price"
+      ]
+    },
+    "numeros_re": {
+      "valores": [],
+      "unidades": []
+    },
+    "tokens": 15,
+    "pipeline_spacy": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "sentencas": [
+      "Price reduction.",
+      "The software needs to record a price reduction with zero quantity."
+    ],
+    "trechos_requisitos": [
+      {
+        "categoria": "preco",
+        "expressao": "Price",
+        "sentenca": "Price reduction."
+      },
+      {
+        "categoria": "preco",
+        "expressao": "price",
+        "sentenca": "The software needs to record a price reduction with zero quantity."
+      }
+    ],
+    "analise_semantica": {
+      "sentimento": {
+        "rotulo": "positivo",
+        "confianca": 0.40260952711105347,
+        "probabilidades": {
+          "positivo": 0.40260952711105347,
+          "neutro": 0.2213621586561203,
+          "negativo": 0.37602829933166504
+        },
+        "modelo": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+        "revisao": "cf991100d706c13c0a080c097134c05b7f436c45",
+        "agregacao": "média das probabilidades ponderada por tokens do embedding"
+      },
+      "embedding": {
+        "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "dimensoes": 384,
+        "agregacao": "média ponderada dos vetores normalizados e nova normalização L2"
+      },
+      "limites_tokens": {
+        "embeddings": 128,
+        "sentimentos": 512
+      },
+      "fragmentos": [
+        {
+          "texto": "Price reduction. The software needs to record a price reduction with zero quantity.",
+          "tokens_embeddings": 20,
+          "tokens_sentimentos": 17,
+          "peso": 18,
+          "probabilidades": {
+            "positivo": 0.40260952711105347,
+            "negativo": 0.37602829933166504,
+            "neutro": 0.2213621586561203
+          }
+        }
+      ],
+      "textos_similares": [
+        {
+          "indice": 2,
+          "id": "texto-3",
+          "titulo": "Customer name in report",
+          "url": "",
+          "similaridade": 0.31558037550969625
+        },
+        {
+          "indice": 1,
+          "id": "texto-2",
+          "titulo": "Sales by brand",
+          "url": "",
+          "similaridade": 0.2983365631326698
+        },
+        {
+          "indice": 3,
+          "id": "texto-4",
+          "titulo": "Permissions for sales",
+          "url": "",
+          "similaridade": 0.16151956327740602
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Pedido da empresa",
+    "id": "texto-6",
+    "idioma": "pt",
+    "texto_limpo": "Pedido da empresa. Quero um painel com preço de R$ 12,00 e 80 unidades vendidas",
+    "url": "",
+    "origem": "usuario",
+    "categorias": [
+      "painel",
+      "preco",
+      "quantidade"
+    ],
+    "evidencias": {
+      "painel": [
+        "painel"
+      ],
+      "preco": [
+        "preço"
+      ],
+      "quantidade": [
+        "unidades vendidas"
+      ]
+    },
+    "numeros_re": {
+      "valores": [
+        "R$ 12,00"
+      ],
+      "unidades": [
+        "80 unidades"
+      ]
+    },
+    "tokens": 16,
+    "pipeline_spacy": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "sentencas": [
+      "Pedido da empresa.",
+      "Quero um painel com preço de R$ 12,00 e 80 unidades vendidas"
+    ],
+    "trechos_requisitos": [
+      {
+        "categoria": "painel",
+        "expressao": "painel",
+        "sentenca": "Quero um painel com preço de R$ 12,00 e 80 unidades vendidas"
+      },
+      {
+        "categoria": "preco",
+        "expressao": "preço",
+        "sentenca": "Quero um painel com preço de R$ 12,00 e 80 unidades vendidas"
+      },
+      {
+        "categoria": "quantidade",
+        "expressao": "unidades vendidas",
+        "sentenca": "Quero um painel com preço de R$ 12,00 e 80 unidades vendidas"
+      }
+    ],
+    "analise_semantica": {
+      "sentimento": {
+        "rotulo": "negativo",
+        "confianca": 0.7182359099388123,
+        "probabilidades": {
+          "positivo": 0.17456747591495514,
+          "neutro": 0.10719665139913559,
+          "negativo": 0.7182359099388123
+        },
+        "modelo": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+        "revisao": "cf991100d706c13c0a080c097134c05b7f436c45",
+        "agregacao": "média das probabilidades ponderada por tokens do embedding"
+      },
+      "embedding": {
+        "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "dimensoes": 384,
+        "agregacao": "média ponderada dos vetores normalizados e nova normalização L2"
+      },
+      "limites_tokens": {
+        "embeddings": 128,
+        "sentimentos": 512
+      },
+      "fragmentos": [
+        {
+          "texto": "Pedido da empresa. Quero um painel com preço de R$ 12,00 e 80 unidades vendidas",
+          "tokens_embeddings": 24,
+          "tokens_sentimentos": 26,
+          "peso": 22,
+          "probabilidades": {
+            "negativo": 0.7182359099388123,
+            "positivo": 0.17456747591495514,
+            "neutro": 0.10719665139913559
+          }
+        }
+      ],
+      "textos_similares": [
+        {
+          "indice": 4,
+          "id": "texto-5",
+          "titulo": "Price reduction",
+          "url": "",
+          "similaridade": 0.32518701848380377
+        },
+        {
+          "indice": 1,
+          "id": "texto-2",
+          "titulo": "Sales by brand",
+          "url": "",
+          "similaridade": 0.27104977279593795
+        },
+        {
+          "indice": 2,
+          "id": "texto-3",
+          "titulo": "Customer name in report",
+          "url": "",
+          "similaridade": 0.20976219239732286
+        }
+      ]
+    }
+  }
+]

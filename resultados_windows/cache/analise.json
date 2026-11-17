@@ -1,0 +1,792 @@
+[
+  {
+    "titulo": "Sales Analytics Report: incompatible with Dashboard Chart",
+    "id": "40751",
+    "idioma": "en",
+    "texto_limpo": "Sales Analytics Report: incompatible with Dashboard Chart. ### Information about bug Because the dataset for the Sales Analytics report is compiled in js after the checkboxes are ticked, and other non-standard data, this report cannot be used on a Workspace or Dashboard Chart which is an essential use-case. Related: ### Module selling ### Version v16 develop ### Installation method None ### Relevant log output / Stack trace / Full Error Message. _No response_",
+    "url": "https://github.com/frappe/erpnext/issues/40751",
+    "origem": "API GitHub",
+    "categorias": [
+      "painel",
+      "vendas"
+    ],
+    "evidencias": {
+      "vendas": [
+        "Sales",
+        "selling"
+      ],
+      "painel": [
+        "Dashboard",
+        "Sales Analytics Report",
+        "Sales Analytics report"
+      ]
+    },
+    "numeros_re": {
+      "valores": [],
+      "unidades": []
+    },
+    "tokens": 97,
+    "pipeline_spacy": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "sentencas": [
+      "Sales Analytics Report: incompatible with Dashboard Chart. ###",
+      "Information about bug Because the dataset for the Sales Analytics report is compiled in js after the checkboxes are ticked, and other non-standard data, this report cannot be used on a Workspace or Dashboard Chart which is an essential use-case.",
+      "Related: ### Module selling ### Version v16 develop ### Installation method None ### Relevant log output / Stack trace / Full Error Message. _No response_"
+    ],
+    "trechos_requisitos": [
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Sales Analytics Report: incompatible with Dashboard Chart. ###"
+      },
+      {
+        "categoria": "painel",
+        "expressao": "Sales Analytics Report",
+        "sentenca": "Sales Analytics Report: incompatible with Dashboard Chart. ###"
+      },
+      {
+        "categoria": "painel",
+        "expressao": "Dashboard",
+        "sentenca": "Sales Analytics Report: incompatible with Dashboard Chart. ###"
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Information about bug Because the dataset for the Sales Analytics report is compiled in js after the checkboxes are ticked, and other non-standard data, this report cannot be used on a Workspace or Dashboard Chart which is an essential use-case."
+      },
+      {
+        "categoria": "painel",
+        "expressao": "Sales Analytics report",
+        "sentenca": "Information about bug Because the dataset for the Sales Analytics report is compiled in js after the checkboxes are ticked, and other non-standard data, this report cannot be used on a Workspace or Dashboard Chart which is an essential use-case."
+      },
+      {
+        "categoria": "painel",
+        "expressao": "Dashboard",
+        "sentenca": "Information about bug Because the dataset for the Sales Analytics report is compiled in js after the checkboxes are ticked, and other non-standard data, this report cannot be used on a Workspace or Dashboard Chart which is an essential use-case."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "selling",
+        "sentenca": "Related: ### Module selling ### Version v16 develop ### Installation method None ### Relevant log output / Stack trace / Full Error Message. _"
+      }
+    ],
+    "analise_semantica": {
+      "sentimento": {
+        "rotulo": "negativo",
+        "confianca": 0.47344541549682617,
+        "probabilidades": {
+          "positivo": 0.16833676397800446,
+          "neutro": 0.3582177758216858,
+          "negativo": 0.47344541549682617
+        },
+        "modelo": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+        "revisao": "cf991100d706c13c0a080c097134c05b7f436c45",
+        "agregacao": "média das probabilidades ponderada por tokens do embedding"
+      },
+      "embedding": {
+        "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "dimensoes": 384,
+        "agregacao": "média ponderada dos vetores normalizados e nova normalização L2"
+      },
+      "limites_tokens": {
+        "embeddings": 128,
+        "sentimentos": 512
+      },
+      "fragmentos": [
+        {
+          "texto": "Sales Analytics Report: incompatible with Dashboard Chart. ### Information about bug Because the dataset for the Sales Analytics report is compiled in js after the checkboxes are ticked, and other non-standard data, this report cannot be used on a Workspace or Dashboard Chart which is an essential use-case. Related: ### Module selling ### Version v16 develop ### Installation method None ### Relevant log output / Stack trace / Full Error Message. _No response_",
+          "tokens_embeddings": 114,
+          "tokens_sentimentos": 121,
+          "peso": 112,
+          "probabilidades": {
+            "negativo": 0.47344541549682617,
+            "neutro": 0.3582177758216858,
+            "positivo": 0.16833676397800446
+          }
+        }
+      ],
+      "textos_similares": [
+        {
+          "indice": 3,
+          "id": "43935",
+          "titulo": "Sales Analytics Report and Sales Register Report disregards User Role Permissions",
+          "url": "https://github.com/frappe/erpnext/issues/43935",
+          "similaridade": 0.5682641230173775
+        },
+        {
+          "indice": 1,
+          "id": "43635",
+          "titulo": "Sales Analytics by Brand",
+          "url": "https://github.com/frappe/erpnext/issues/43635",
+          "similaridade": 0.5401863322301893
+        },
+        {
+          "indice": 2,
+          "id": "7788",
+          "titulo": "Sales Analytics report - Feature Request",
+          "url": "https://github.com/frappe/erpnext/issues/7788",
+          "similaridade": 0.5074326015500031
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Sales Analytics by Brand",
+    "id": "43635",
+    "idioma": "en",
+    "texto_limpo": "Sales Analytics by Brand. **Is your feature request related to a problem? Please describe.** Currently there is no way in ERPNext to view sales based on the brand of the item. **Describe the solution you'd like** Within the existing filters, under Tree Type, \"Brand\" could be added in report \"Sales Analytics\" **Describe alternatives you've considered** I could not find any alternative within ERPNext than building a new report. But since the Sales Analytics report itself is very good, it will be better to incorporate within it. **Additional context**",
+    "url": "https://github.com/frappe/erpnext/issues/43635",
+    "origem": "API GitHub",
+    "categorias": [
+      "filtro",
+      "painel",
+      "vendas"
+    ],
+    "evidencias": {
+      "vendas": [
+        "Sales",
+        "sales"
+      ],
+      "filtro": [
+        "filters"
+      ],
+      "painel": [
+        "Sales Analytics report"
+      ]
+    },
+    "numeros_re": {
+      "valores": [],
+      "unidades": []
+    },
+    "tokens": 119,
+    "pipeline_spacy": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "sentencas": [
+      "Sales Analytics by Brand. **Is your feature request related to a problem?",
+      "Please describe.**",
+      "Currently there is no way in ERPNext to view sales based on the brand of the item. **Describe the solution you'd like** Within the existing filters, under Tree Type, \"Brand\" could be added in report \"Sales Analytics\" **Describe alternatives you've considered** I could not find any alternative within ERPNext than building a new report.",
+      "But since the Sales Analytics report itself is very good, it will be better to incorporate within it. **Additional context**"
+    ],
+    "trechos_requisitos": [
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Sales Analytics by Brand. **"
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "sales",
+        "sentenca": "Currently there is no way in ERPNext to view sales based on the brand of the item. **"
+      },
+      {
+        "categoria": "filtro",
+        "expressao": "filters",
+        "sentenca": "Describe the solution you'd like** Within the existing filters, under Tree Type, \"Brand\" could be added in report \"Sales Analytics\" **Describe alternatives you've considered** I could not find any alternative within ERPNext than building a new report."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Describe the solution you'd like** Within the existing filters, under Tree Type, \"Brand\" could be added in report \"Sales Analytics\" **Describe alternatives you've considered** I could not find any alternative within ERPNext than building a new report."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "But since the Sales Analytics report itself is very good, it will be better to incorporate within it. **"
+      },
+      {
+        "categoria": "painel",
+        "expressao": "Sales Analytics report",
+        "sentenca": "But since the Sales Analytics report itself is very good, it will be better to incorporate within it. **"
+      }
+    ],
+    "analise_semantica": {
+      "sentimento": {
+        "rotulo": "positivo",
+        "confianca": 0.6074162125587463,
+        "probabilidades": {
+          "positivo": 0.6074162125587463,
+          "neutro": 0.24552519619464874,
+          "negativo": 0.14705859124660492
+        },
+        "modelo": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+        "revisao": "cf991100d706c13c0a080c097134c05b7f436c45",
+        "agregacao": "média das probabilidades ponderada por tokens do embedding"
+      },
+      "embedding": {
+        "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "dimensoes": 384,
+        "agregacao": "média ponderada dos vetores normalizados e nova normalização L2"
+      },
+      "limites_tokens": {
+        "embeddings": 128,
+        "sentimentos": 512
+      },
+      "fragmentos": [
+        {
+          "texto": "Sales Analytics by Brand. **Is your feature request related to a problem? Please describe.** Currently there is no way in ERPNext to view sales based on the brand of the item. **Describe the solution you'd like** Within the existing filters, under Tree Type, \"Brand\" could be added in report \"Sales Analytics\" **Describe alternatives you've considered** I could not find any alternative within ERPNext than building a new report. But since the Sales Analytics report itself is very good, it will be better to incorporate within it. **Additional context**",
+          "tokens_embeddings": 128,
+          "tokens_sentimentos": 143,
+          "peso": 126,
+          "probabilidades": {
+            "positivo": 0.6074162125587463,
+            "neutro": 0.24552519619464874,
+            "negativo": 0.14705859124660492
+          }
+        }
+      ],
+      "textos_similares": [
+        {
+          "indice": 2,
+          "id": "7788",
+          "titulo": "Sales Analytics report - Feature Request",
+          "url": "https://github.com/frappe/erpnext/issues/7788",
+          "similaridade": 0.586262678245048
+        },
+        {
+          "indice": 3,
+          "id": "43935",
+          "titulo": "Sales Analytics Report and Sales Register Report disregards User Role Permissions",
+          "url": "https://github.com/frappe/erpnext/issues/43935",
+          "similaridade": 0.5500058667091949
+        },
+        {
+          "indice": 0,
+          "id": "40751",
+          "titulo": "Sales Analytics Report: incompatible with Dashboard Chart",
+          "url": "https://github.com/frappe/erpnext/issues/40751",
+          "similaridade": 0.5401863322301893
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Sales Analytics report - Feature Request",
+    "id": "7788",
+    "idioma": "en",
+    "texto_limpo": "Sales Analytics report - Feature Request. In the Sales Analytics report, is it possible to get Customer names with or without Codes. We need the customers to be saved with codes, but would want the reports to have the customer name as its very difficult to analyse the reports with just the customer codes. !sales analytics",
+    "url": "https://github.com/frappe/erpnext/issues/7788",
+    "origem": "API GitHub",
+    "categorias": [
+      "cliente",
+      "painel",
+      "vendas"
+    ],
+    "evidencias": {
+      "vendas": [
+        "Sales",
+        "sales"
+      ],
+      "painel": [
+        "Sales Analytics report"
+      ],
+      "cliente": [
+        "Customer names",
+        "customer name"
+      ]
+    },
+    "numeros_re": {
+      "valores": [],
+      "unidades": []
+    },
+    "tokens": 62,
+    "pipeline_spacy": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "sentencas": [
+      "Sales Analytics report - Feature Request.",
+      "In the Sales Analytics report, is it possible to get Customer names with or without Codes.",
+      "We need the customers to be saved with codes, but would want the reports to have the customer name as its very difficult to analyse the reports with just the customer codes. !sales analytics"
+    ],
+    "trechos_requisitos": [
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Sales Analytics report - Feature Request."
+      },
+      {
+        "categoria": "painel",
+        "expressao": "Sales Analytics report",
+        "sentenca": "Sales Analytics report - Feature Request."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "In the Sales Analytics report, is it possible to get Customer names with or without Codes."
+      },
+      {
+        "categoria": "painel",
+        "expressao": "Sales Analytics report",
+        "sentenca": "In the Sales Analytics report, is it possible to get Customer names with or without Codes."
+      },
+      {
+        "categoria": "cliente",
+        "expressao": "Customer names",
+        "sentenca": "In the Sales Analytics report, is it possible to get Customer names with or without Codes."
+      },
+      {
+        "categoria": "cliente",
+        "expressao": "customer name",
+        "sentenca": "We need the customers to be saved with codes, but would want the reports to have the customer name as its very difficult to analyse the reports with just the customer codes. !"
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "sales",
+        "sentenca": "sales analytics"
+      }
+    ],
+    "analise_semantica": {
+      "sentimento": {
+        "rotulo": "negativo",
+        "confianca": 0.45364171266555786,
+        "probabilidades": {
+          "positivo": 0.26905450224876404,
+          "neutro": 0.2773037552833557,
+          "negativo": 0.45364171266555786
+        },
+        "modelo": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+        "revisao": "cf991100d706c13c0a080c097134c05b7f436c45",
+        "agregacao": "média das probabilidades ponderada por tokens do embedding"
+      },
+      "embedding": {
+        "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "dimensoes": 384,
+        "agregacao": "média ponderada dos vetores normalizados e nova normalização L2"
+      },
+      "limites_tokens": {
+        "embeddings": 128,
+        "sentimentos": 512
+      },
+      "fragmentos": [
+        {
+          "texto": "Sales Analytics report - Feature Request. In the Sales Analytics report, is it possible to get Customer names with or without Codes. We need the customers to be saved with codes, but would want the reports to have the customer name as its very difficult to analyse the reports with just the customer codes. !sales analytics",
+          "tokens_embeddings": 72,
+          "tokens_sentimentos": 73,
+          "peso": 70,
+          "probabilidades": {
+            "negativo": 0.45364171266555786,
+            "neutro": 0.2773037552833557,
+            "positivo": 0.26905450224876404
+          }
+        }
+      ],
+      "textos_similares": [
+        {
+          "indice": 1,
+          "id": "43635",
+          "titulo": "Sales Analytics by Brand",
+          "url": "https://github.com/frappe/erpnext/issues/43635",
+          "similaridade": 0.586262678245048
+        },
+        {
+          "indice": 3,
+          "id": "43935",
+          "titulo": "Sales Analytics Report and Sales Register Report disregards User Role Permissions",
+          "url": "https://github.com/frappe/erpnext/issues/43935",
+          "similaridade": 0.5668210759372341
+        },
+        {
+          "indice": 0,
+          "id": "40751",
+          "titulo": "Sales Analytics Report: incompatible with Dashboard Chart",
+          "url": "https://github.com/frappe/erpnext/issues/40751",
+          "similaridade": 0.5074326015500031
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Sales Analytics Report and Sales Register Report disregards User Role Permissions",
+    "id": "43935",
+    "idioma": "en",
+    "texto_limpo": "Sales Analytics Report and Sales Register Report disregards User Role Permissions. ### Information about bug The Sales Analytics Report currently fetches and displays sales data for all users, regardless of their assigned roles and permissions. This includes data from branches and POS profiles that the user cannot access. **Steps to Reproduce:** - Log in as a user with limited permissions (e.g., a branch user). - Access the Sales Analytics Report. - Observe the report data. **Expected Behavior:** The report should only display sales data relevant to the user's role and permissions. For example, a branch user should only see sales data for their specific branch. **Actual Behavior:** The report displays sales data for all branches and POS profiles, including those that the user is not authorized to view. ### Module selling ### Version Frappe: Version-15 ERPNext: Version-15 ### Installation method None ### Relevant log output / Stack trace / Full Error Message. _No response_",
+    "url": "https://github.com/frappe/erpnext/issues/43935",
+    "origem": "API GitHub",
+    "categorias": [
+      "acesso",
+      "painel",
+      "vendas"
+    ],
+    "evidencias": {
+      "vendas": [
+        "Sales",
+        "sales",
+        "selling"
+      ],
+      "painel": [
+        "Sales Analytics Report"
+      ],
+      "acesso": [
+        "Permissions",
+        "permissions"
+      ]
+    },
+    "numeros_re": {
+      "valores": [],
+      "unidades": []
+    },
+    "tokens": 198,
+    "pipeline_spacy": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "sentencas": [
+      "Sales Analytics Report and Sales Register Report disregards User Role Permissions. ###",
+      "Information about bug The Sales Analytics Report currently fetches and displays sales data for all users, regardless of their assigned roles and permissions.",
+      "This includes data from branches and POS profiles that the user cannot access. **Steps to Reproduce:** - Log in as a user with limited permissions (e.g., a branch user). -",
+      "Access the Sales Analytics Report. -",
+      "Observe the report data. **Expected Behavior:** The report should only display sales data relevant to the user's role and permissions.",
+      "For example, a branch user should only see sales data for their specific branch. **Actual Behavior:** The report displays sales data for all branches and POS profiles, including those that the user is not authorized to view. ###",
+      "Module selling ### Version Frappe: Version-15 ERPNext: Version-15 ### Installation method None ### Relevant log output / Stack trace / Full Error Message. _No response_"
+    ],
+    "trechos_requisitos": [
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Sales Analytics Report and Sales Register Report disregards User Role Permissions. ###"
+      },
+      {
+        "categoria": "painel",
+        "expressao": "Sales Analytics Report",
+        "sentenca": "Sales Analytics Report and Sales Register Report disregards User Role Permissions. ###"
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Sales Analytics Report and Sales Register Report disregards User Role Permissions. ###"
+      },
+      {
+        "categoria": "acesso",
+        "expressao": "Permissions",
+        "sentenca": "Sales Analytics Report and Sales Register Report disregards User Role Permissions. ###"
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Information about bug The Sales Analytics Report currently fetches and displays sales data for all users, regardless of their assigned roles and permissions."
+      },
+      {
+        "categoria": "painel",
+        "expressao": "Sales Analytics Report",
+        "sentenca": "Information about bug The Sales Analytics Report currently fetches and displays sales data for all users, regardless of their assigned roles and permissions."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "sales",
+        "sentenca": "Information about bug The Sales Analytics Report currently fetches and displays sales data for all users, regardless of their assigned roles and permissions."
+      },
+      {
+        "categoria": "acesso",
+        "expressao": "permissions",
+        "sentenca": "Information about bug The Sales Analytics Report currently fetches and displays sales data for all users, regardless of their assigned roles and permissions."
+      },
+      {
+        "categoria": "acesso",
+        "expressao": "permissions",
+        "sentenca": "Steps to Reproduce:** - Log in as a user with limited permissions (e.g., a branch user). -"
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Access the Sales Analytics Report. -"
+      },
+      {
+        "categoria": "painel",
+        "expressao": "Sales Analytics Report",
+        "sentenca": "Access the Sales Analytics Report. -"
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "sales",
+        "sentenca": "Expected Behavior:** The report should only display sales data relevant to the user's role and permissions."
+      },
+      {
+        "categoria": "acesso",
+        "expressao": "permissions",
+        "sentenca": "Expected Behavior:** The report should only display sales data relevant to the user's role and permissions."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "sales",
+        "sentenca": "For example, a branch user should only see sales data for their specific branch. **"
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "sales",
+        "sentenca": "Actual Behavior:** The report displays sales data for all branches and POS profiles, including those that the user is not authorized to view. ###"
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "selling",
+        "sentenca": "Module selling ### Version Frappe: Version-15 ERPNext: Version-15 ### Installation method None ### Relevant log output / Stack trace / Full Error Message. _"
+      }
+    ],
+    "analise_semantica": {
+      "sentimento": {
+        "rotulo": "negativo",
+        "confianca": 0.43539184060963715,
+        "probabilidades": {
+          "positivo": 0.17520347237586975,
+          "neutro": 0.3894046192819422,
+          "negativo": 0.43539184060963715
+        },
+        "modelo": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+        "revisao": "cf991100d706c13c0a080c097134c05b7f436c45",
+        "agregacao": "média das probabilidades ponderada por tokens do embedding"
+      },
+      "embedding": {
+        "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "dimensoes": 384,
+        "agregacao": "média ponderada dos vetores normalizados e nova normalização L2"
+      },
+      "limites_tokens": {
+        "embeddings": 128,
+        "sentimentos": 512
+      },
+      "fragmentos": [
+        {
+          "texto": "Sales Analytics Report and Sales Register Report disregards User Role Permissions. ### Information about bug The Sales Analytics Report currently fetches and displays sales data for all users, regardless of their assigned roles and permissions. This includes data from branches and POS profiles that the user cannot access. **Steps to Reproduce:** - Log in as a user with limited permissions (e.g., a branch user). - Access the Sales Analytics Report. - Observe the report data. **Expected Behavior:** The report should only display sales data relevant to the",
+          "tokens_embeddings": 128,
+          "tokens_sentimentos": 135,
+          "peso": 126,
+          "probabilidades": {
+            "negativo": 0.44852495193481445,
+            "neutro": 0.34032192826271057,
+            "positivo": 0.211153045296669
+          }
+        },
+        {
+          "texto": "user's role and permissions. For example, a branch user should only see sales data for their specific branch. **Actual Behavior:** The report displays sales data for all branches and POS profiles, including those that the user is not authorized to view. ### Module selling ### Version Frappe: Version-15 ERPNext: Version-15 ### Installation method None ### Relevant log output / Stack trace / Full Error Message. _No response_",
+          "tokens_embeddings": 107,
+          "tokens_sentimentos": 114,
+          "peso": 105,
+          "probabilidades": {
+            "neutro": 0.44830384850502014,
+            "negativo": 0.41963210701942444,
+            "positivo": 0.13206398487091064
+          }
+        }
+      ],
+      "textos_similares": [
+        {
+          "indice": 0,
+          "id": "40751",
+          "titulo": "Sales Analytics Report: incompatible with Dashboard Chart",
+          "url": "https://github.com/frappe/erpnext/issues/40751",
+          "similaridade": 0.5682641230173775
+        },
+        {
+          "indice": 2,
+          "id": "7788",
+          "titulo": "Sales Analytics report - Feature Request",
+          "url": "https://github.com/frappe/erpnext/issues/7788",
+          "similaridade": 0.5668210759372341
+        },
+        {
+          "indice": 1,
+          "id": "43635",
+          "titulo": "Sales Analytics by Brand",
+          "url": "https://github.com/frappe/erpnext/issues/43635",
+          "similaridade": 0.5500058667091949
+        }
+      ]
+    }
+  },
+  {
+    "titulo": "Rate Reduction via Credit Note",
+    "id": "53760",
+    "idioma": "en",
+    "texto_limpo": "Rate Reduction via Credit Note. ## Bug Report / Feature Request: Rate Adjustment Entry for Credit Note (Rate Reduction) ### Module Accounts > Sales Invoice > Credit Note ### ERPNext Version (Version 16) --- ### Problem Statement ERPNext currently supports **\"Is Rate Adjustment Entry (Debit Note)\"** for rate **increase** scenarios — which correctly generates an e-Invoice with **zero quantity** and **no stock movement**. However, there is **no equivalent feature for rate reduction**, which should be handled via a **Credit Note**. --- ### Current Behavior When a seller needs to issue a Credit Note for rate reduction (price revision downward): - Credit Note with actual qty → Incorrect qty submitted to e-Invoice (IRP), implying goods return - Qty = 1 with difference amount → No item-wise breakup possible - Negative rate/amount → Not accepted by ERPNext - Journal Entry → Does not generate e-Invoice - Debit Note with rate adjustment → Only works for rate increase, not reduction None of the above options correctly handle a **rate reduction Credit Note** with: - ✅ Zero quantity in e-Invoice - ✅ Item-wise rate difference breakup - ✅ No stock movement - ✅ GST/e-Invoice compliant output --- ### Expected Behavior A **\"Is Rate Adjustment Entry\"** checkbox should be available on **Credit Notes** (similar to Debit Notes), which should: 1. Allow item-wise entry with zero quantity 2. Accept only the rate difference (reduction amount per item) 3. Generate e-Invoice with zero qty — purely as a value adjustment 4. No stock ledger entry 5. Correctly adjust GST (CGST/SGST/IGST) per item --- ### Why This Matters This is a **very common scenario in Indian trade** — rate revisions after invoice issuance are frequent. GST law requires a proper Credit Note with item-wise details. Without this feature, businesses are forced to: - Manually generate e-Invoice on IRP portal - Enter incorrect qty in the system - Use non-compliant workarounds This is a **compliance gap** for all Indian ERPNext users. --- ### Suggested Fix Mirror the existing **\"Is Rate Adjustment Entry (Debit Note)\"** logic symmetrically for Credit Notes: - Add **\"Is Rate Adjustment Entry (Credit Note)\"** checkbox on Sales Invoice - When checked: qty = 0 in e-Invoice, no stock movement, item-wise rate difference entry allowed --- ### Steps to Reproduce 1. Create a Sales Invoice and submit 2. Try to create a Credit Note for rate reduction only (no goods return) 3. Observe that no compliant option exists to generate correct e-Invoice with zero qty --- ### Additional Context - Country: India - GST e-Invoice applicable - IRP portal accepts zero qty credit notes for rate reduction - Debit Note already has this feature — Credit Note should have it symmetrically",
+    "url": "https://github.com/frappe/erpnext/issues/53760",
+    "origem": "API GitHub",
+    "categorias": [
+      "preco",
+      "vendas"
+    ],
+    "evidencias": {
+      "vendas": [
+        "Sales"
+      ],
+      "preco": [
+        "price",
+        "price revision"
+      ]
+    },
+    "numeros_re": {
+      "valores": [],
+      "unidades": []
+    },
+    "tokens": 614,
+    "pipeline_spacy": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "sentencas": [
+      "Rate Reduction via Credit Note. ##",
+      "Bug Report / Feature Request: Rate Adjustment Entry for Credit Note (Rate Reduction) ### Module Accounts > Sales Invoice > Credit Note ### ERPNext Version (Version 16) --- ### Problem Statement ERPNext currently supports **\"Is Rate Adjustment Entry (Debit Note)\"** for rate **increase** scenarios — which correctly generates an e-Invoice with **zero quantity** and **no stock movement**.",
+      "However, there is **no equivalent feature for rate reduction**, which should be handled via a **Credit Note**. --- ###",
+      "Current Behavior When a seller needs to issue a Credit Note for rate reduction (price revision downward): - Credit Note with actual qty → Incorrect qty submitted to e-Invoice (IRP), implying goods return - Qty = 1 with difference amount → No item-wise breakup possible - Negative rate/amount → Not accepted by ERPNext - Journal Entry → Does not generate e-Invoice - Debit Note with rate adjustment → Only works for rate increase, not reduction None of the above options correctly handle a **rate reduction Credit Note** with: - ✅ Zero quantity in e-Invoice - ✅ Item-wise rate difference breakup - ✅ No stock movement - ✅ GST/e-Invoice compliant output --- ### Expected Behavior A **\"Is Rate Adjustment Entry\"** checkbox should be available on **Credit Notes** (similar to Debit Notes), which should: 1.",
+      "Allow item-wise entry with zero quantity 2.",
+      "Accept only the rate difference (reduction amount per item) 3.",
+      "Generate e-Invoice with zero qty — purely as a value adjustment 4.",
+      "No stock ledger entry 5.",
+      "Correctly adjust GST (CGST/SGST/IGST) per item --- ### Why This Matters This is a **very common scenario in Indian trade** — rate revisions after invoice issuance are frequent.",
+      "GST law requires a proper Credit Note with item-wise details.",
+      "Without this feature, businesses are forced to: - Manually generate e-Invoice on IRP portal - Enter incorrect qty in the system - Use non-compliant workarounds This is a **compliance gap** for all Indian ERPNext users. --- ###",
+      "Suggested Fix Mirror the existing **\"Is Rate Adjustment Entry (Debit Note)\"** logic symmetrically for Credit Notes: - Add **\"Is Rate Adjustment Entry (Credit Note)\"** checkbox on Sales Invoice - When checked: qty = 0 in e-Invoice, no stock movement, item-wise rate difference entry allowed --- ### Steps to Reproduce 1.",
+      "Create a Sales Invoice and submit 2.",
+      "Try to create a Credit Note for rate reduction only (no goods return) 3.",
+      "Observe that no compliant option exists to generate correct e-Invoice with zero qty --- ### Additional Context - Country: India - GST e-Invoice applicable - IRP portal accepts zero qty credit notes for rate reduction - Debit Note already has this feature — Credit Note should have it symmetrically"
+    ],
+    "trechos_requisitos": [
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Bug Report / Feature Request: Rate Adjustment Entry for Credit Note (Rate Reduction) ### Module Accounts > Sales Invoice > Credit Note ### ERPNext Version (Version 16) --- ### Problem Statement ERPNext currently supports **\"Is Rate Adjustment Entry (Debit Note)\"** for rate **increase** scenarios — which correctly generates an e-Invoice with **zero quantity** and **no stock movement**."
+      },
+      {
+        "categoria": "preco",
+        "expressao": "price",
+        "sentenca": "Current Behavior When a seller needs to issue a Credit Note for rate reduction (price revision downward): - Credit Note with actual qty → Incorrect qty submitted to e-Invoice (IRP), implying goods return - Qty = 1 with difference amount → No item-wise breakup possible - Negative rate/amount → Not accepted by ERPNext - Journal Entry → Does not generate e-Invoice - Debit Note with rate adjustment → Only works for rate increase, not reduction None of the above options correctly handle a **rate reduction Credit Note** with: - ✅ Zero quantity in e-Invoice - ✅ Item-wise rate difference breakup - ✅ No stock movement - ✅ GST/e-Invoice compliant output --- ### Expected Behavior A **\"Is Rate Adjustment Entry\"** checkbox should be available on **Credit Notes** (similar to Debit Notes), which should: 1."
+      },
+      {
+        "categoria": "preco",
+        "expressao": "price revision",
+        "sentenca": "Current Behavior When a seller needs to issue a Credit Note for rate reduction (price revision downward): - Credit Note with actual qty → Incorrect qty submitted to e-Invoice (IRP), implying goods return - Qty = 1 with difference amount → No item-wise breakup possible - Negative rate/amount → Not accepted by ERPNext - Journal Entry → Does not generate e-Invoice - Debit Note with rate adjustment → Only works for rate increase, not reduction None of the above options correctly handle a **rate reduction Credit Note** with: - ✅ Zero quantity in e-Invoice - ✅ Item-wise rate difference breakup - ✅ No stock movement - ✅ GST/e-Invoice compliant output --- ### Expected Behavior A **\"Is Rate Adjustment Entry\"** checkbox should be available on **Credit Notes** (similar to Debit Notes), which should: 1."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Suggested Fix Mirror the existing **\"Is Rate Adjustment Entry (Debit Note)\"** logic symmetrically for Credit Notes: - Add **\"Is Rate Adjustment Entry (Credit Note)\"** checkbox on Sales Invoice - When checked: qty = 0 in e-Invoice, no stock movement, item-wise rate difference entry allowed --- ### Steps to Reproduce 1."
+      },
+      {
+        "categoria": "vendas",
+        "expressao": "Sales",
+        "sentenca": "Create a Sales Invoice and submit 2."
+      }
+    ],
+    "analise_semantica": {
+      "sentimento": {
+        "rotulo": "negativo",
+        "confianca": 0.4980897379262571,
+        "probabilidades": {
+          "positivo": 0.21281448142648718,
+          "neutro": 0.28909576976575385,
+          "negativo": 0.4980897379262571
+        },
+        "modelo": "lxyuan/distilbert-base-multilingual-cased-sentiments-student",
+        "revisao": "cf991100d706c13c0a080c097134c05b7f436c45",
+        "agregacao": "média das probabilidades ponderada por tokens do embedding"
+      },
+      "embedding": {
+        "modelo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revisao": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "dimensoes": 384,
+        "agregacao": "média ponderada dos vetores normalizados e nova normalização L2"
+      },
+      "limites_tokens": {
+        "embeddings": 128,
+        "sentimentos": 512
+      },
+      "fragmentos": [
+        {
+          "texto": "Rate Reduction via Credit Note. ## Bug Report / Feature Request: Rate Adjustment Entry for Credit Note (Rate Reduction) ### Module Accounts > Sales Invoice > Credit Note ### ERPNext Version (Version 16) --- ### Problem Statement ERPNext currently supports **\"Is Rate Adjustment Entry (Debit Note)\"** for rate **increase** scenarios — which correctly generates an e-Invoice with **zero quantity** and **no stock movement**. However, there is **no equivalent feature for rate",
+          "tokens_embeddings": 126,
+          "tokens_sentimentos": 140,
+          "peso": 124,
+          "probabilidades": {
+            "negativo": 0.39118850231170654,
+            "neutro": 0.35854315757751465,
+            "positivo": 0.2502683103084564
+          }
+        },
+        {
+          "texto": "reduction**, which should be handled via a **Credit Note**. --- ### Current Behavior When a seller needs to issue a Credit Note for rate reduction (price revision downward): - Credit Note with actual qty → Incorrect qty submitted to e-Invoice (IRP), implying goods return - Qty = 1 with difference amount → No item-wise breakup possible - Negative rate/amount → Not accepted by ERPNext - Journal Entry → Does not generate e-Invoice - Debit Note with rate adjustment",
+          "tokens_embeddings": 128,
+          "tokens_sentimentos": 129,
+          "peso": 126,
+          "probabilidades": {
+            "negativo": 0.6200176477432251,
+            "neutro": 0.2509956359863281,
+            "positivo": 0.1289866715669632
+          }
+        },
+        {
+          "texto": "→ Only works for rate increase, not reduction None of the above options correctly handle a **rate reduction Credit Note** with: - ✅ Zero quantity in e-Invoice - ✅ Item-wise rate difference breakup - ✅ No stock movement - ✅ GST/e-Invoice compliant output --- ### Expected Behavior A **\"Is Rate Adjustment Entry\"** checkbox should be available on **Credit Notes** (similar to Debit Notes), which should: 1. Allow item-wise entry with zero",
+          "tokens_embeddings": 127,
+          "tokens_sentimentos": 125,
+          "peso": 125,
+          "probabilidades": {
+            "neutro": 0.36826539039611816,
+            "negativo": 0.31863853335380554,
+            "positivo": 0.3130960464477539
+          }
+        },
+        {
+          "texto": "quantity 2. Accept only the rate difference (reduction amount per item) 3. Generate e-Invoice with zero qty — purely as a value adjustment 4. No stock ledger entry 5. Correctly adjust GST (CGST/SGST/IGST) per item --- ### Why This Matters This is a **very common scenario in Indian trade** — rate revisions after invoice issuance are frequent. GST law requires a proper Credit Note with item-wise details. Without this feature, businesses are forced to: - Manually generate e-Invoice on IRP portal",
+          "tokens_embeddings": 128,
+          "tokens_sentimentos": 141,
+          "peso": 126,
+          "probabilidades": {
+            "negativo": 0.6663472056388855,
+            "neutro": 0.20725618302822113,
+            "positivo": 0.12639659643173218
+          }
+        },
+        {
+          "texto": "- Enter incorrect qty in the system - Use non-compliant workarounds This is a **compliance gap** for all Indian ERPNext users. --- ### Suggested Fix Mirror the existing **\"Is Rate Adjustment Entry (Debit Note)\"** logic symmetrically for Credit Notes: - Add **\"Is Rate Adjustment Entry (Credit Note)\"** checkbox on Sales Invoice - When checked: qty = 0 in e-Invoice, no stock movement, item-wise rate difference entry allowed --- ###",
+          "tokens_embeddings": 127,
+          "tokens_sentimentos": 141,
+          "peso": 125,
+          "probabilidades": {
+            "negativo": 0.5641488432884216,
+            "neutro": 0.23159898817539215,
+            "positivo": 0.2042521983385086
+          }
+        },
+        {
+          "texto": "Steps to Reproduce 1. Create a Sales Invoice and submit 2. Try to create a Credit Note for rate reduction only (no goods return) 3. Observe that no compliant option exists to generate correct e-Invoice with zero qty --- ### Additional Context - Country: India - GST e-Invoice applicable - IRP portal accepts zero qty credit notes for rate reduction - Debit Note already has this feature — Credit Note should have it symmetrically",
+          "tokens_embeddings": 110,
+          "tokens_sentimentos": 113,
+          "peso": 108,
+          "probabilidades": {
+            "negativo": 0.4135194420814514,
+            "neutro": 0.3242052495479584,
+            "positivo": 0.2622753381729126
+          }
+        }
+      ],
+      "textos_similares": [
+        {
+          "indice": 1,
+          "id": "43635",
+          "titulo": "Sales Analytics by Brand",
+          "url": "https://github.com/frappe/erpnext/issues/43635",
+          "similaridade": 0.41489845620975574
+        },
+        {
+          "indice": 3,
+          "id": "43935",
+          "titulo": "Sales Analytics Report and Sales Register Report disregards User Role Permissions",
+          "url": "https://github.com/frappe/erpnext/issues/43935",
+          "similaridade": 0.32718200448250473
+        },
+        {
+          "indice": 0,
+          "id": "40751",
+          "titulo": "Sales Analytics Report: incompatible with Dashboard Chart",
+          "url": "https://github.com/frappe/erpnext/issues/40751",
+          "similaridade": 0.285353542619087
+        }
+      ]
+    }
+  }
+]

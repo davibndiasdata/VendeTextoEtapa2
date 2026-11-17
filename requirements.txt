@@ -1,0 +1,12 @@
+# Python 3.12. Instale primeiro requirements-torch-cpu.txt para usar CPU.
+numpy==2.3.5
+spacy==3.8.18
+matplotlib==3.10.8
+torch==2.10.0
+transformers==4.57.6
+sentence-transformers==5.2.0
+huggingface-hub==0.36.2
+tokenizers==0.22.2
+safetensors==0.8.0
+scikit-learn==1.8.0
+scipy==1.17.0

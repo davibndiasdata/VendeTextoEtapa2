@@ -1,0 +1,43 @@
+{
+  "versao": "2.0.0",
+  "executado_em_utc": "2026-11-17T15:06:29.947126+00:00",
+  "modo": "cache",
+  "etapa2_executada": true,
+  "offline": true,
+  "textos_corpus": 5,
+  "consultas_usuario": 0,
+  "pipeline_spacy": {
+    "pt": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ],
+    "en": [
+      "sentencizer",
+      "requisitos_vendetexto"
+    ]
+  },
+  "entrada_sha256": "d311511caaf30b7185e6495869468562d5a9d0bdd50186b2ae4c1b502b65be32",
+  "sentimentos_corpus": {
+    "negativo": 4,
+    "positivo": 1
+  },
+  "vendas": {
+    "natureza": "fictícia, separada das issues",
+    "produto": "Caderno",
+    "indicadores": {
+      "preco_variacao_pct": 20.0,
+      "quantidade_variacao_pct": -20.0,
+      "elasticidade_preco": 1.0,
+      "classe": "unitaria no intervalo",
+      "receita_antes": 1000.0,
+      "receita_depois": 960.0
+    }
+  },
+  "limites_interpretacao": [
+    "Cinco issues escolhidas não representam todos os usuários do ERPNext.",
+    "Score agregado não mede acurácia nem urgência do requisito.",
+    "Similaridade é um ranking relativo e não prova duplicidade.",
+    "A agregação por fragmentos é uma aproximação da representação e do tom do documento.",
+    "A consulta do usuário não altera as contagens nem os candidatos do corpus."
+  ]
+}

@@ -1,0 +1,24 @@
+VENDETEXTO - ETAPA 2
+
+Equipe: Angelica Maria da Silva, Leonardo Pessoa de Souza e
+Davi Batista Nobrega Dias.
+Base da etapa 2 elaborada por Angelica. Revisao tecnica com apoio do ChatGPT.
+
+1. EXTRAIA O ZIP inteiro. Nao execute arquivos dentro da pasta compactada.
+2. No Windows, use Python 3.12 de 64 bits.
+3. Abra instalar_windows.bat. Ele cria um ambiente proprio, instala bibliotecas
+   e baixa os dois modelos. Precisa de internet e pode levar alguns minutos.
+4. Quando terminar, abra executar_windows.bat.
+5. Veja o terminal e a pasta saida: JSON, CSV, embeddings e quatro graficos.
+
+O ZIP contem codigo e dados. Bibliotecas e pesos dos modelos sao baixados na
+instalacao e nao acompanham o ZIP. Depois da preparacao, cache --offline
+executa a etapa 2 sem nova consulta de rede.
+
+ANTES DA APRESENTACAO: teste tudo no computador que vai compartilhar a tela.
+O README.md explica todos os comandos, limites e solucoes para erros.
+documentacao/AJUSTES_REALIZADOS.md explica o que mudou em relacao ao codigo
+recebido. original/vendetexto2_angelica.py preserva esse arquivo sem alteracoes.
+
+O Windows e os arquivos .bat precisam de verificacao no computador da equipe;
+o registro do que foi efetivamente testado acompanha a documentacao.

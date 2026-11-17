@@ -1,0 +1,20 @@
+RESULTADOS REAIS SALVOS DA REVISAO - 16/11/2026
+
+cache_real:
+  Etapa 2 aplicada ao snapshot original das cinco issues do repositorio.
+  Base textual real, sem consulta adicional do usuario.
+  Caderno usa vendas ficticias do CSV, separadas das issues.
+
+demo_com_consulta:
+  Etapa 2 aplicada aos cinco textos inventados de demonstracao.
+  Inclui a consulta: "Quero um painel com preco de R$ 12,00 e 80 unidades vendidas".
+  A consulta usa acentuacao no arquivo real; a descricao aqui e simplificada.
+  Caneca usa vendas ficticias do CSV.
+
+Os resultados foram calculados pelos pesos reais dos modelos. Nao sao
+previsoes simuladas. O resumo.json de cada pasta identifica o modo, os
+textos do corpus, a consulta e a configuracao daquela execucao.
+
+Estes arquivos permitem estudar as saidas antes da instalacao. Uma nova
+execucao normalmente grava em saida e nao altera esta pasta de exemplos.
+Eles nao substituem a demonstracao do programa rodando no computador da equipe.

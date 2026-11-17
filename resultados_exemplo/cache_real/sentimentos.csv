@@ -1,0 +1,6 @@
+﻿id,titulo,origem,sentimento,score_agregado,positivo,neutro,negativo,fragmentos
+40751,Sales Analytics Report: incompatible with Dashboard Chart,API GitHub,negativo,0.47344568371772766,0.1683366596698761,0.35821768641471863,0.47344568371772766,1
+43635,Sales Analytics by Brand,API GitHub,positivo,0.6074163317680359,0.6074163317680359,0.24552510678768158,0.14705856144428253,1
+7788,Sales Analytics report - Feature Request,API GitHub,negativo,0.4536415934562683,0.2690547704696655,0.27730369567871094,0.4536415934562683,1
+43935,Sales Analytics Report and Sales Register Report disregards User Role Permissions,API GitHub,negativo,0.43539185415614734,0.17520355365493082,0.3894046111540361,0.43539185415614734,2
+53760,Rate Reduction via Credit Note,API GitHub,negativo,0.49808970755549803,0.21281456868151552,0.2890957041113188,0.49808970755549803,6

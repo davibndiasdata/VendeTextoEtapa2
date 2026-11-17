@@ -1,0 +1,7 @@
+﻿id,titulo,origem,sentimento,score_agregado,positivo,neutro,negativo,fragmentos
+texto-1,Sales dashboard chart,exemplo redigido para demonstracao,positivo,0.5417718887329102,0.5417718887329102,0.19804678857326508,0.2601812779903412,1
+texto-2,Sales by brand,exemplo redigido para demonstracao,positivo,0.5543102622032166,0.5543102622032166,0.24694208800792694,0.1987476497888565,1
+texto-3,Customer name in report,exemplo redigido para demonstracao,positivo,0.38558974862098694,0.38558974862098694,0.35449346899986267,0.25991687178611755,1
+texto-4,Permissions for sales,exemplo redigido para demonstracao,positivo,0.44720205664634705,0.44720205664634705,0.23979127407073975,0.3130066692829132,1
+texto-5,Price reduction,exemplo redigido para demonstracao,positivo,0.4026094675064087,0.4026094675064087,0.22136223316192627,0.37602829933166504,1
+texto-6,Pedido da empresa,usuario,negativo,0.718235969543457,0.17456741631031036,0.10719664394855499,0.718235969543457,1
