@@ -1,0 +1,28 @@
+# Ambiente e modelos locais
+.venv/
+venv/
+modelos/
+.cache/
+
+# Caches de Python e testes
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Novas execuções locais; evidências salvas ficam em resultados_windows
+/saida*/
+
+# Credenciais e arquivos locais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+*.log
+*.zip
